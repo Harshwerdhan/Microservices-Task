@@ -152,7 +152,7 @@ services:
 ```
 ## Build and run docker images
 On Windows with Docker Engine
--  This command find `.yml` file in current directory
+-  This command find `.yml` file in current directory and start build images and run container
   ```
   docker-compose up
   ```
