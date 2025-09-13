@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  user-service:
+    build: ./Microservices/user-service
+    container_name: user-container
+    ports:
+      - "3000:3000"
+
+  product-service:
+    build: ./Microservices/product-service
+    container_name: product-container
+    ports:
+      - "3001:3001"
+
+  order-service:
+    build: ./Microservices/order-service
+    container_name: order-container
+    ports:
+      - "3002:3002"
+
+  gateway-service:
+    build: ./Microservices/gateway-service
+    container_name: gateway-container
+    ports:
+      - "3003:3003"
